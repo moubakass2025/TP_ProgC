@@ -31,7 +31,7 @@ int main() {
     printf("Adresse de lli: %p, Valeur : %016llx\n", (void*)plli, (unsigned long long)lli);
     printf("Adresse de f  : %p, Valeur : %08x\n", (void*)pf, *(unsigned int*)(void*)pf);
     printf("Adresse de d  : %p, Valeur : %016llx\n", (void*)pd, *(unsigned long long*)(void*)pd);
-    printf("Adresse de ld : %p, Valeur : ");
+    printf("Adresse de ld : %p, Valeur : ", (void*)pld);
 
     // Impression octet par octet du long double
     unsigned char *bytes = (unsigned char*)pld;
@@ -59,7 +59,7 @@ int main() {
     printf("Adresse de lli: %p, Valeur : %016llx\n", (void*)plli, (unsigned long long)lli);
     printf("Adresse de f  : %p, Valeur : %08x\n", (void*)pf, *(unsigned int*)(void*)pf);
     printf("Adresse de d  : %p, Valeur : %016llx\n", (void*)pd, *(unsigned long long*)(void*)pd);
-    printf("Adresse de ld : %p, Valeur : ");
+    printf("Adresse de ld : %p, Valeur : ", (void*)pld);
     bytes = (unsigned char*)pld;
     for (int j = 0; j < sizeof(long double); j++) {
         printf("%02x", bytes[j]);
